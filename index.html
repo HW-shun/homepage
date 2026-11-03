@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>陈顺昌 - 个人主页</title>
+  <meta name="description" content="陈顺昌的个人主页。">
+  <meta name="keywords" content="个人主页, 个人网站, 作品集, 产品经理">
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var theme = saved === "dark" || saved === "light"
+          ? saved
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+  <div id="app">
+    
+    <nav class="top-nav">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="./">首页</a>
+        </div>
+        <div class="nav-right">
+          
+          <button id="localeToggle" class="lang-toggle" title="切换到英文" aria-label="切换到英文">
+            EN
+          </button>
+          <button id="themeToggle" class="theme-toggle" title="切换主题" aria-label="切换主题">
+            <span data-theme-icon><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.63 15.4A7.75 7.75 0 0 1 8.6 6.37 7.75 7.75 0 1 0 17.63 15.4Z"/></svg></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <header class="sidebar">
+        <div class="profile-card">
+          <div class="image avatar"><img src="./uploads/6bc27e5d-ff75-4f74-a9e0-85468ef59df8.jpg" alt="头像"></div>
+
+          <h1 class="site-name">陈顺昌</h1>
+          <p class="site-email">shunhwson@gmail.com</p>
+
+          <div class="social-icons">
+            <a href="mailto:shunhwson@gmail.com" title="邮箱" aria-label="邮箱"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm1.7.5 7.05 5.1a.5.5 0 0 0 .5 0L19.3 6H4.7Zm14.8 1.38-6.72 4.86a2 2 0 0 1-2.16 0L3.9 7.88V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.88Z"/></svg></a><button type="button" class="social-button" data-qr="./img/wechat-qr.JPG" data-qr-title="扫码添加微信" title="微信" aria-label="微信"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.4 4.5c-3.86 0-7 2.7-7 6.03 0 1.9 1.04 3.6 2.66 4.72l-.66 2.26 2.5-1.4c.76.22 1.58.34 2.44.34.28 0 .55-.02.82-.05A5.7 5.7 0 0 0 9.5 15.1c-3.2 0-5.8-2.28-5.8-5.1S6.3 4.9 9.5 4.9c.3 0 .6.02.88.06A6.8 6.8 0 0 0 9.4 4.5Zm-.9 3.15a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8Zm3.7 0a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8ZM16.1 9.4c-3.5 0-6.35 2.46-6.35 5.5s2.85 5.5 6.35 5.5c.7 0 1.38-.1 2.02-.28l2.18 1.22-.56-1.94c1.38-.98 2.26-2.46 2.26-4.1 0-3.04-2.85-5.4-6.9-5.4Zm-1.55 4.05a.78.78 0 1 1 0 1.56.78.78 0 0 1 0-1.56Zm3.2 0a.78.78 0 1 1 0 1.56.78.78 0 0 1 0-1.56Z"/></svg></button><a href="https://github.com/HW-shun" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .3C5.37.3 0 5.67 0 12.3c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58 0-.28-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.08 1.84 2.83 1.3 3.52 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.21.7.82.58C20.56 22.1 24 17.6 24 12.3 24 5.67 18.63.3 12 .3Z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="section sidebar-education" id="education">
+          <div class="section-heading"><h2 class="section-title">教育经历</h2></div>
+          <div class="section-body">
+            <div class="timeline-item">
+    <div class="experience-item">
+      <img src="./img/uiuc.png" alt="院校标志" class="institution-logo">
+      <div class="experience-content">
+        <p class="exp-title"><strong>伊利诺伊大学厄巴纳-香槟分校</strong></p>
+        <p class="exp-detail">硕士，计算机科学</p>
+        <p class="exp-period">2024 - 2026</p>
+      </div>
+    </div></div><div class="timeline-item">
+    <div class="experience-item">
+      <img src="./img/wku.jpg" alt="院校标志" class="institution-logo">
+      <div class="experience-content">
+        <p class="exp-title"><strong>温州肯恩大学</strong></p>
+        <p class="exp-detail">本科，计算机科学</p>
+        <p class="exp-period">2020 - 2024</p>
+      </div>
+    </div></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="section" id="about">
+          <div class="section-heading"><h2 class="section-title">关于我</h2></div>
+          <div class="section-body">
+            <p>我是 <strong>陈顺昌</strong>，AI 产品经理，目前就职于上海朝阳永续信息技术股份有限公司。</p><p>我的工作与兴趣集中在金融 AI、AI Agent、大语言模型产品，以及人机交互与软件工程。</p>
+            
+          </div>
+        </div>
+
+        <div class="section" id="experience">
+          <div class="section-heading"><h2 class="section-title">工作经历</h2></div>
+          <div class="section-body">
+            <div class="timeline-item">
+    <div class="experience-item">
+      <img src="./img/suntime.png" alt="公司标志" class="institution-logo">
+      <div class="experience-content">
+        <p class="exp-title"><strong>上海朝阳永续信息技术股份有限公司</strong></p>
+        <p class="exp-detail">AI 产品经理</p>
+        <p class="exp-period">2026 - 至今</p>
+      </div>
+    </div></div>
+          </div>
+        </div>
+
+        <div class="section" id="projects">
+          <div class="section-heading"><h2 class="section-title">项目经历</h2></div>
+          <div class="section-body">
+            
+        <div class="timeline-item">
+          <article class="project-card has-website">
+            <a class="project-card-hit" href="#" aria-label="智能体管理TUI · 官网"></a>
+            <div class="project-content">
+              <div class="title">智能体管理TUI</div>
+              <div class="version">v1.0.0</div>
+              <div class="period">2026</div>
+              <div class="summary">一句话介绍这个项目做什么、为什么重要。</div>
+              <div class="stack">主要技术栈: TypeScript, React, Vite</div>
+              <div class="project-links"><a class="project-link" href="#" title="官网" aria-label="官网"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M12 2.25a9.75 9.75 0 1 0 0 19.5 9.75 9.75 0 0 0 0-19.5ZM3.75 12a8.25 8.25 0 0 1 7.5-8.21V6.5a.75.75 0 0 0 1.5 0V3.79A8.25 8.25 0 0 1 20.2 11.25h-2.7a.75.75 0 0 0 0 1.5h2.7a8.25 8.25 0 0 1-7.45 7.46V17.5a.75.75 0 0 0-1.5 0v2.71A8.25 8.25 0 0 1 3.8 12.75h2.7a.75.75 0 0 0 0-1.5h-2.7A8.28 8.28 0 0 1 3.75 12Zm5.9-4.13a6.76 6.76 0 0 1 4.7 0 6.7 6.7 0 0 1 0 8.26 6.76 6.76 0 0 1-4.7 0 6.7 6.7 0 0 1 0-8.26Z"/></svg></a><a class="project-link" href="https://github.com/yourname/project-name" target="_blank" rel="noopener noreferrer" title="代码" aria-label="代码"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .3C5.37.3 0 5.67 0 12.3c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58 0-.28-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.08 1.84 2.83 1.3 3.52 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.21.7.82.58C20.56 22.1 24 17.6 24 12.3 24 5.67 18.63.3 12 .3Z"/></svg></a></div>
+            </div>
+          </article>
+        </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          &copy; 2026 陈顺昌. 保留所有权利。
+        </p>
+      </footer>
+    </div>
+
+    <div id="qrModal" class="qr-modal" hidden>
+      <div class="qr-modal-backdrop" data-qr-close></div>
+      <div class="qr-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="qrModalTitle" tabindex="-1">
+        <button type="button" class="qr-modal-close" data-qr-close aria-label="关闭">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.22 6.22a.75.75 0 0 1 1.06 0L12 10.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L13.06 12l4.72 4.72a.75.75 0 1 1-1.06 1.06L12 13.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L10.94 12 6.22 7.28a.75.75 0 0 1 0-1.06Z"/></svg>
+        </button>
+        <img id="qrModalImage" class="qr-modal-image" alt="">
+        <p id="qrModalTitle" class="qr-modal-title"></p>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="site-content">{"revision":0,"name":{"zh":"陈顺昌","en":"Shunchang Chen"},"email":"shunhwson@gmail.com","pageTitle":{"zh":"陈顺昌 - 个人主页","en":"Shunchang Chen - Homepage"},"description":{"zh":"陈顺昌的个人主页。","en":"Shunchang Chen's personal homepage."},"keywords":{"zh":"个人主页, 个人网站, 作品集, 产品经理","en":"personal homepage, personal website, portfolio, product manager"},"avatar":{"fileName":"9d97c3f8b09df8596a61b974f3fc87df.jpeg","url":"./uploads/6bc27e5d-ff75-4f74-a9e0-85468ef59df8.jpg"},"copyrightYear":2026,"ui":{"zh":{"home":"首页","themeToggle":"切换主题","languageToggle":"切换到英文","languageButton":"EN","about":"关于我","education":"教育经历","experience":"工作经历","projects":"项目经历","projectWebsite":"官网","projectCode":"代码","projectStack":"主要技术栈","rights":"保留所有权利。","avatarAlt":"头像","wechatQrTitle":"扫码添加微信","qrClose":"关闭","resumeDownload":"下载简历"},"en":{"home":"Home","themeToggle":"Toggle theme","languageToggle":"Switch to Chinese","languageButton":"中","about":"About Me","education":"Education","experience":"Experience","projects":"Projects","projectWebsite":"Website","projectCode":"Code","projectStack":"Tech stack","rights":"All rights reserved.","avatarAlt":"Profile avatar","wechatQrTitle":"Scan to add WeChat","qrClose":"Close","resumeDownload":"Download CV"}},"social":[{"id":"33e992fb-4528-420b-9d7d-5aa1de7923f8","icon":"email","title":{"zh":"邮箱","en":"Email"},"href":"mailto:shunhwson@gmail.com","qr":null,"qrTitle":{"zh":"","en":""},"kind":"link","visible":true},{"id":"b12df7bb-276f-46af-ab52-05aecf3624da","icon":"wechat","title":{"zh":"微信","en":"WeChat"},"href":"","qr":{"fileName":"wechat-qr.JPG","url":"./img/wechat-qr.JPG"},"qrTitle":{"zh":"扫码添加微信","en":"Scan to add WeChat"},"kind":"qr","visible":true},{"id":"04ed44ff-741e-44a9-b93e-92c6633ff2e1","icon":"github","title":{"zh":"GitHub","en":"GitHub"},"href":"https://github.com/HW-shun","qr":null,"qrTitle":{"zh":"","en":""},"kind":"link","visible":true}],"education":[{"id":"education-1","logo":{"fileName":"uiuc.png","url":"./img/uiuc.png"},"logoAlt":{"zh":"院校标志","en":"Institution logo"},"title":{"zh":"伊利诺伊大学厄巴纳-香槟分校","en":"University of Illinois Urbana-Champaign"},"details":{"zh":["硕士，计算机科学"],"en":["M.S. in Computer Science"]},"period":{"zh":"2024 - 2026","en":"2024 - 2026"},"visible":true},{"id":"education-2","logo":{"fileName":"wku.jpg","url":"./img/wku.jpg"},"logoAlt":{"zh":"院校标志","en":"Institution logo"},"title":{"zh":"温州肯恩大学","en":"Wenzhou-Kean University"},"details":{"zh":["本科，计算机科学"],"en":["B.S. in Computer Science"]},"period":{"zh":"2020 - 2024","en":"2020 - 2024"},"visible":true}],"about":{"zh":["我是 \u003cstrong\u003e陈顺昌\u003c/strong\u003e，AI 产品经理，目前就职于上海朝阳永续信息技术股份有限公司。","我的工作与兴趣集中在金融 AI、AI Agent、大语言模型产品，以及人机交互与软件工程。"],"en":["I am \u003cstrong\u003eShunchang Chen\u003c/strong\u003e, an AI product manager at Shanghai Suntime Information Technology Co., Ltd.","My work and interests focus on financial AI, AI agents, large language model products, as well as human-computer interaction and software engineering."]},"resume":{"zh":null,"en":null},"experience":[{"id":"experience-1","logo":{"fileName":"suntime.png","url":"./img/suntime.png"},"logoAlt":{"zh":"公司标志","en":"Company logo"},"title":{"zh":"上海朝阳永续信息技术股份有限公司","en":"Shanghai Suntime Information Technology Co., Ltd."},"details":{"zh":["AI 产品经理"],"en":["AI Product Manager"]},"period":{"zh":"2026 - 至今","en":"2026 - Present"},"visible":true}],"projects":[{"id":"project-1","name":{"zh":"智能体管理TUI","en":"AgentDock"},"version":"v1.0.0","period":{"zh":"2026","en":"2026"},"summary":{"zh":"一句话介绍这个项目做什么、为什么重要。","en":"A one-line summary of what this project does and why it matters."},"stack":{"zh":"TypeScript, React, Vite","en":"TypeScript, React, Vite"},"website":"#","code":"https://github.com/yourname/project-name","visible":true}]}</script>
+  <script type="module" src="./assets/site.js"></script>
+</body>
+</html>
