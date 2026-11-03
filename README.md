@@ -1,6 +1,6 @@
 # 陈顺昌 · 个人主页
 
-中英双语个人主页的静态站点，托管在 GitHub Pages。
+中英双语个人主页的静态站点，托管在 GitHub Pages：<https://hw-shun.github.io/homepage/>
 
 这些文件由本地编辑器导出，是发布产物：请不要直接改这里的内容，下次导出会整份覆盖。
 
